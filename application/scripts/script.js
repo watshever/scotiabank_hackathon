@@ -11,6 +11,16 @@ $(document).ready(function () {
     }, {
         offset: '25%'
     })
+    $('#pig-pic').waypoint({
+        handler: function (direction) {
+            if (direction == "up") {
+                $('.end-text').addClass('animate__animated animate__fadeInLeft')
+                $('.waving').addClass('animate__animated animate__fadeInLeft')
+            }
+        }
+    }, {
+        offset: '25%'
+    })
     $('.s1').waypoint({
         handler: function (direction) {
             if (direction == "up") {
@@ -33,9 +43,29 @@ $(document).ready(function () {
         handler: function (direction) {
             if (direction == "up") {
                 $('.s3').addClass('animate__animated animate__fadeInLeft')
+
             }
         }
     }, {
         offset: '75%'
+    })
+
+    $('.s3').waypoint({
+        handler: function (direction) {
+            if (direction == "up") {
+                $('.ladder').addClass('animate__animated animate__fadeInLeft')
+            }
+        }
+    }, {
+        offset: '100%'
+    })
+    $('.s1').waypoint({
+        handler: function (direction) {
+            if (direction == "up") {
+                $('.sky-area').addClass('animate__animated animate__fadeOut')
+            }
+        }
+    }, {
+        offset: '100%'
     })
 })
