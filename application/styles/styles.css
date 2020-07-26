@@ -1,0 +1,100 @@
+:root {
+    --main-color: red
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 3vw;
+}
+
+p{
+    font-size: 1vw;
+}
+
+.card {
+    background-color: (0,0,0,0);
+}
+
+/* _________________________Top Section________________________ */
+
+#banner {
+    display: flex;
+    position: relative;
+    background-color: var(--main-color);
+    height: 20vh;
+}
+
+#banner > h1 {
+    font-size: 5rem;
+    color:white
+}
+
+#sky {
+    background-color: white;
+}
+
+#pig-card {
+    position: relative;
+    height: 50vh;
+}
+
+#pig-card > p {
+    position: absolute;
+    bottom: 31vh;
+    z-index: 10;
+}
+
+#pig-pic {
+    position: absolute;
+    height: 35vh;
+    bottom: -5vh;
+    z-index: 5;
+}
+
+#content-body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 400vh;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#cliff {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background-color: grey;
+    width:50%;
+    z-index: -1;
+}
+
+#floor {
+    position: relative;
+    height: 5vh;
+    width: 100%;
+    background-color: black;
+}
+
+.section {
+    z-index: 5;
+    margin-top: 5vh;
+    height: 60vh;
+    width: 80%;
+    right: 0;
+}
+
+.section-filler {
+    height: 15vh;
+}
+
+.s1, .s2, .s3{
+    visibility: hidden;
+}
+
+.animate__fadeInLeft {
+    visibility: visible;
+}
