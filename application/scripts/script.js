@@ -9,7 +9,7 @@ $(document).ready(function () {
     $('.wp-about').waypoint(function () {
         $('.wp-about').addClass('animate__animated animate__fadeInLeft');
     }, {
-        offset: '75%'
+        offset: '25%'
     })
     $('.s1').waypoint({
         handler: function (direction) {
@@ -18,7 +18,7 @@ $(document).ready(function () {
             }
         }
     }, {
-        offset: '75%'
+        offset: '25%'
     })
     $('.s2').waypoint({
         handler: function (direction) {
@@ -27,7 +27,7 @@ $(document).ready(function () {
             }
         }
     }, {
-        offset: '75%'
+        offset: '25%'
     })
     $('.s3').waypoint({
         handler: function (direction) {
